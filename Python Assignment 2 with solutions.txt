@@ -1,0 +1,93 @@
+Programming Assignment_2
+
+1. Write a Python program to convert kilometers to miles?
+Sol.
+km = 6
+miles = km/1.609
+print("Km to miles is : ",miles)
+
+Km to miles is :  3.7290242386575514
+
+ 
+
+
+2.Write a Python program to convert Celsius to Fahrenheit?
+Sol.
+c = 35
+f = (9*c/5)+32
+print("For Celsius = {} equivalent Fahrenheit = {}".format(c, f))
+For Celsius = 35 equivalent Fahrenheit = 95.0
+
+ 
+
+Lets solve one more example let us take C=37
+
+c = 37
+f = (9*c/5)+32
+print("For Celsius = {} equivalent Fahrenheit = {}".format(c, f))
+ 
+
+For Celsius = 37 equivalent Fahrenheit = 98.6
+
+3. Write a Python program to display calendar?
+Sol.
+import calendar
+year = 2022
+month = 12
+
+print(calendar.month(year,month))
+ 
+4. Write a Python program to solve quadratic equation?
+Sol.
+import math
+print("The quadratic equation is ax^2 + bx + c = 0 ")
+print("Enter the coefficients a,b and constant c ")
+a = int(input("Enter the coeffient a : "))
+b = int(input("Enter the coeffient b : "))
+c = int(input("Enter the coeffient c : "))
+d = b**2-4*a*c
+root1 = ((-1*b)+(math.sqrt(d)))/(2*a)
+root2 = ((-1*b)-(math.sqrt(d)))/(2*a)
+print("\n for quadratic equation {}x^2 + {}x + {}".formy(a,b,c))
+print('The solutions are {} and {}'.format(root1,root2))
+The quadratic equation is ax^2 + bx + c = 0 
+Enter the coefficients a,b and constant c 
+ 
+import cmath
+a = 2
+b = 5
+c = 10
+
+d = (b**2) - (4*a*c)
+
+s1 = (-b-cmath.sqrt(d))/(2*a)
+s2 = (-b+cmath.sqrt(d))/(2*a)
+
+print("Equation ",(s1,s2))
+Equation  ((-1.25-1.8540496217739157j), (-1.25+1.8540496217739157j))
+ 
+5. Write a Python program to swap two variables without temp variable?
+Sol.
+abc1 = 6
+abc2 = 4
+print('Before swap:\nvar1 = {} and var2 = {}'.format(abc1, abc2))
+abc2 = abc1 + abc2
+abc1 = abc2 - abc1
+abc2 = abc2 - abc1
+print('\nAfter swap:\nvar1 = {} and var2 = {}'.format(abc1, abc2))
+# var1 = 6
+# var2 = 4
+# print('Before swap:\nvar1 = {} and var2 = {}'.format(var1, var2))
+# var2 = var1 + var2
+# var1 = var2 - var1
+# var2 = var2 - var1
+# print('\nAfter swap:\nvar1 = {} and var2 = {}'.format(var1, var2))
+Before swap:
+var1 = 6 and var2 = 4
+After swap:
+var1 = 4 and var2 = 6
+ 
+
+
+
+
